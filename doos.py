@@ -2,7 +2,7 @@ import random
 import socket
 import threading
 
-print("FlOOD TEST)
+print("FlOOD TEST")
 ip = str(input(" Ip:"))
 port = int(input(" Port:"))
 choice = str(input(" UDP/TCP(1/2):"))
